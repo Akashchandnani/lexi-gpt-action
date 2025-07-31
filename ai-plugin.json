@@ -5,14 +5,14 @@
   "description_for_model": "Answers questions about contracts by calling the Databricks model.",
   "description_for_human": "Use this GPT to analyze contracts using a model served in Databricks.",
   "auth": {
-    "type": "oauth",
-    "client_url": "https://login.microsoftonline.com/c597d848-7136-482a-b0ef-2bc0313157c7/oauth2/v2.0/authorize",
-    "scope": "https://databricks.azure.net/.default",
-    "authorization_content_type": "application/x-www-form-urlencoded",
-    "token_url": "https://login.microsoftonline.com/c597d848-7136-482a-b0ef-2bc0313157c7/oauth2/v2.0/token",
-    "client_id": "8404c415-ad4a-4402-ac4b-db62fc31687a",
-    "client_secret": "7m48Q~YQEbCtsGKOU5IOSHnEWi-R6vj5Xfr.ec6G"
-  },
+  "type": "oauth",
+  "authorization_url": "https://login.microsoftonline.com/c597d848-7136-482a-b0ef-2bc0313157c7/oauth2/v2.0/authorize",
+  "token_url": "https://login.microsoftonline.com/c597d848-7136-482a-b0ef-2bc0313157c7/oauth2/v2.0/token",
+  "scope": "https://databricks.azure.net/.default",
+  "authorization_content_type": "application/x-www-form-urlencoded",
+  "client_id": "8404c415-ad4a-4402-ac4b-db62fc31687a",
+  "client_secret": "7m48Q~YQEbCtsGKOU5IOSHnEWi-R6vj5Xfr.ec6G"
+},
   "api": {
     "type": "openapi",
     "url": "https://akashchandnani.github.io/lexi-gpt-action/openapi.json"
