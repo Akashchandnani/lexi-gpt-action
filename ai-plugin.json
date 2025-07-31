@@ -15,7 +15,7 @@
   },
   "api": {
     "type": "openapi",
-    "url": "https://<your-domain>/openapi.json"
+    "url": "https://akashchandnani.github.io/lexi-gpt-action/openapi.json"
   },
   "logo_url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Databricks_Logo.png",
   "contact_email": "you@yourcompany.com",
