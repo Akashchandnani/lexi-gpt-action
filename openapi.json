@@ -7,7 +7,7 @@
   },
   "servers": [
     {
-      "url": "https://dbc-b068bfd0-342d.cloud.databricks.com/serving-endpoints/g3_backend_openai/invocations"
+      "url": "https://dbc-b068bfd0-342d.cloud.databricks.com"
     }
   ],
   "paths": {
