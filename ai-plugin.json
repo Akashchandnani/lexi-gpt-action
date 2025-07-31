@@ -1,0 +1,23 @@
+{
+  "schema_version": "v1",
+  "name_for_model": "lexi_g3_databricks",
+  "name_for_human": "Lexi for G3",
+  "description_for_model": "Answers questions about contracts by calling the Databricks model.",
+  "description_for_human": "Use this GPT to analyze contracts using a model served in Databricks.",
+  "auth": {
+    "type": "oauth",
+    "client_url": "https://login.microsoftonline.com/<TENANT_ID>/oauth2/v2.0/authorize",
+    "scope": "https://databricks.azure.net/.default",
+    "authorization_content_type": "application/x-www-form-urlencoded",
+    "token_url": "https://login.microsoftonline.com/<TENANT_ID>/oauth2/v2.0/token",
+    "client_id": "<CLIENT_ID>",
+    "client_secret": "<CLIENT_SECRET>"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://<your-domain>/openapi.json"
+  },
+  "logo_url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Databricks_Logo.png",
+  "contact_email": "you@yourcompany.com",
+  "legal_info_url": "https://yourcompany.com/legal"
+}

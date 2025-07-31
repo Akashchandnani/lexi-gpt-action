@@ -1,0 +1,69 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "G3 Databricks Model API",
+    "version": "1.0.0",
+    "description": "Send a question to the G3 Databricks model."
+  },
+  "servers": [
+    {
+      "url": "https://dbc-b068bfd0-342d.cloud.databricks.com"
+    }
+  ],
+  "paths": {
+    "/serving-endpoints/g3_backend_openai/invocations": {
+      "post": {
+        "operationId": "askModel",
+        "summary": "Ask a question to the Databricks model",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "inputs": {
+                    "type": "object",
+                    "properties": {
+                      "query": {
+                        "type": "object",
+                        "properties": {
+                          "query": { "type": "string" },
+                          "doc_type": { "type": "string" },
+                          "user_id": { "type": "string" },
+                          "session_id": { "type": "string" },
+                          "llm_model": { "type": "string" },
+                          "it": { "type": "string" },
+                          "transportation": { "type": "string" },
+                          "pii": { "type": "string" }
+                        },
+                        "required": ["query"]
+                      }
+                    },
+                    "required": ["query"]
+                  }
+                },
+                "required": ["inputs"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Model response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "result": { "type": "string" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
